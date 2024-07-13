@@ -1,0 +1,21 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build tinyfb",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "main.cpp",
+                "tinyfb.cpp",
+                "-o",
+                "tinyfb_app"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}
